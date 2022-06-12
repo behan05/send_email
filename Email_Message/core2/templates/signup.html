@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-8 mt-4" style="margin-left: 200px;">
+            <form action="" class="form-control bg-light" method="post">{% csrf_token %}
+                <h1 class="text-center text-bg-info mt-5">Please, Singup!</h1>
+                <label for="name">Name</label>
+                <input type="text" class="form-control text-bg-d=shadow" name="name" value="" required>
+                <label for="email">Email</label>
+                <input type="email" class="form-control text-bg-d=shadow" name="email" value="" required>
+                <label for="password">Password</label>
+                <input type="password" class="form-control text-bg-d=shadow" name="password" value="" required>
+                <input type="submit" class="form-control mt-3 btn btn-outline-success" value="Register Now">
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
